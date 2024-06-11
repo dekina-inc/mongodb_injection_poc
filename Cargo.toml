@@ -1,0 +1,11 @@
+[package]
+name = "poc_mongodb_injection"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.11.3"
+log = "0.4.21"
+mongodb = { version = "2.8.2", features = ["bson-chrono-0_4"] }
+serde = { version = "1.0.203", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["full"] }
